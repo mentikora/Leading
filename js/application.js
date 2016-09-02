@@ -1,20 +1,21 @@
 'use strict';
 
 (function(){
+	$('document').ready(function(){
+		$('.show_info').on('click', function(e){
+			e.stopPropagation();
 
-	$('.show_info').on('click', function(e){
-		e.stopPropagation();
+			if ( $(this).hasClass('active') ) {
+				$(this).removeClass('active');
+				$('.team_img').attr('src', 'img/all.jpg');
+				$(this).siblings('.show_info').show();
+			} else {
+				$(this).addClass('active');
+				$(this).siblings('.show_info').removeClass('active').hide();
+				$('.team_img').attr('src', 'img/all_' + $(this).data('person') + '.jpg');	
+			}
 
-		if ( $(this).hasClass('active') ) {
-			$(this).removeClass('active');
-			$('.team_img').attr('src', 'img/all.jpg');
-			$(this).siblings('.show_info').show();
-		} else {
-			$(this).addClass('active');
-			$(this).siblings('.show_info').removeClass('active').hide();
-			$('.team_img').attr('src', 'img/all_' + $(this).data('person') + '.jpg');	
-		}
-
+		});
 	});
 
 	setSkullProperties()		 
