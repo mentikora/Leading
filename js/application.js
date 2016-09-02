@@ -16,9 +16,10 @@
 			}
 
 		});
+		setSkullProperties()	
 	});
 
-	setSkullProperties()		 
+		 
 	$(window).resize(function(){
 		setSkullProperties()		  
 	}).trigger('resize');
