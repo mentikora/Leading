@@ -123,13 +123,14 @@ aside{
 		width: 40%;
 		padding: 40px;
 	}
+		aside.left .top * {
+			float: left;
+		}
 		aside.left .logo{
 			margin-left: 30px;
-			position: relative;
-			top: 8px;
 		}
 		aside.left h1{
-			color: #e99f51;
+			color: #fa8046;
 			font-size: 84px;
 			line-height: 84px;
 			margin-bottom: 25px;
@@ -157,7 +158,7 @@ aside{
 			margin-left: 20px;
 		}
 	aside.right{
-		width: 80%;
+		width: 60%;
 		position: relative;
 	}
 		aside.right .top,
@@ -195,7 +196,6 @@ aside{
 	
 /* image magic */
 #image_wrapper{
-	/*display: flex;*/
 	height: 100%;
 	background-color: #000;
 }
@@ -208,7 +208,7 @@ aside{
 
 	}
 	#image_wrapper .skull{
-		display: flex;
+		/* display: flex; */
 		height: 100%;
 	}
 	#image_wrapper .skull{
@@ -365,5 +365,24 @@ aside{
     left: 0;
     right: 0;
     bottom: 0;
+	}
+}
+
+@media(max-width: 1500px){
+	aside.left h1{ 
+		font-size: 64px;   
+		white-space: nowrap;
+	}
+	aside.right .pull-left *{
+		font-size: 16px;
+	}
+	aside.right .telephone{
+		font-size: 28px;
+	}
+}
+@media(max-height: 800px){
+	aside.left p{
+		font-size: 16px;
+		line-height: 21px;
 	}
 }
