@@ -215,6 +215,7 @@ aside{
 		position: relative;
 	}
 		#image_wrapper .skull div{
+			width: 400%;
 			position: absolute;
 			top: 25px;
 			left: 76px;
@@ -234,9 +235,33 @@ aside{
 			line-height: 52px;
 			font-family: 'MetaProBold';
 		}
-		#image_wrapper .skull .person_right{
-			left: inherit;
-			left: -235px;
+		#image_wrapper .skull .person_detailed{
+			display: inline-block;
+			height: 50px;
+			line-height: 50px;
+			padding-right: 85px;
+
+			text-transform: uppercase;
+			font-size: 18px;
+			color: #fab624;
+			text-decoration: none;
+			background: url('images/sprite-arrow-more.png') no-repeat;
+			background-position: right 0;
+		}
+			#image_wrapper .person_detailed:hover{
+				background-position: right -50px;
+			}
+		#image_wrapper .skull .person_6{
+			left: -180px;
+		}
+		#image_wrapper .skull .person_7{
+			left: -265px;
+		}
+		#image_wrapper .skull .person_8{
+			left: -185px;
+		}
+		#image_wrapper .skull .person_9{
+			left: -265px;
 		}
 	#image_wrapper .show_info{
 		display: block;
