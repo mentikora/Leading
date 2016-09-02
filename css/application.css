@@ -279,7 +279,6 @@ aside{
 			background: url('images/sprite-minus.png') no-repeat;
 		}
 			#image_wrapper .show_info.active div{
-				/*display: block;*/
 				height: auto;
 				opacity: 1;
 				visibility: visible;
@@ -324,8 +323,35 @@ aside{
     	left: 89%;
 		}
 
+.socials{}
+	.socials a{
+		display: inline-block;
+		margin-left: 15px;
+		width: 55px;
+		height: 55px;
+		background: url('images/sprite-socials.png') no-repeat;
+	}
+		.socials .vk{
+			background-position: 0 0;
+		}
+			.socials .vk:hover{
+				background-position: 0 -55px;		
+			}
+		.socials .fb{
+			background-position: -70px 0;
+		}
+			.socials .fb:hover{
+				background-position: -70px -55px;		
+			}
+		.socials .insta{
+			background-position: -140px 0;
+		}
+			.socials .insta:hover{
+				background-position: -140px -55px;		
+			}
 
-@media(max-width: 1170px){
+
+@media(max-width: 1200px){
 	aside.left{
 		display: none;
 	}
