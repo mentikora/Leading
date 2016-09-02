@@ -24,7 +24,7 @@
 	}).trigger('resize');
 
 	function setSkullProperties(){
-		$('.skull').height( $('.skull .team_img').height() );
+		// $('.skull').height( $('.skull .team_img').height() );
 		$('.skull').css('top', ($(window).height() - $('.skull').height() ) / 2 + 'px' );
 	}
 
